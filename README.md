@@ -6,4 +6,4 @@ The *ice* folder contains in-class exercises.
 
 ## About Me
 https://www.linkedin.com/in/grace-white-ucf/ 
-Grace White is seeking a position in Front-end development.She has a passion for design and is always dedicated to her work.
+Grace White is seeking a position in Front-end development.She has a passion for design and is always dedicated to her work. 
