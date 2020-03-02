@@ -1,36 +1,37 @@
-import React from "react";
-import Card from "../Card/";
-import data from "../../data.json";
+import React from 'react';
+import Card from "../Card/index.js";
+import data from '../../../src/data.json';
 
-class CardList extends React.Component{
-    constructor(props){
+class CardList extends React.Component {
+    constructor(props) {
         super(props);
-        this.state = {cards: data.cards}
-    }
-    //to remove the card
-    remove = (event) => {
-        let cardtitle = event.target.getAttribute("cardtitle");
-        let localCards = this.state.cards;
-        let changed = localCards.filter((card) => {
-            return card.title !== cardtitle;
-        });
-        this.setState({cards:changed});
+        this.state = {cards: data.cards};
     }
 
-    render(){
+    deleteCard = (event) => {
+        console.log("Clicked delete");
+        let cardID = event.target.getAttribute("dataname");
+        let oldCards = this.state.cards;
+        let newCards = oldCards.filter((card) => {
+            console.log(card.title + " " + cardID);
+            return card.title !== cardID;
+        });
+        this.setState({ cards: newCards});
+    }
+    
+    render() {
         return(
-            <div>
-                {
-                    this.state.cards.map((card,index) =>{
-                        return<Card
-                            key={index}
-                            title={card.title}
-                            content={card.content}
-                            clickClose={this.remove} />
-                    })
-                }
-            </div>
+            this.state.cards.map((card, i) => {
+                return <Card 
+                    key={i} 
+                    deleteCard={this.deleteCard} 
+                    title={card.title} 
+                    content={card.content}
+                ></Card>
+            })
         );
     }
 }
+
+
 export default CardList;
