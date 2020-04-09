@@ -1,0 +1,89 @@
+[
+    {
+      "question": "What is the worst fish on animal crossing?",
+      "possibleAnswers":
+      [
+        {"text":"water egg",
+        "correct":true },
+        {"text":"sea bass",
+          "correct":false
+        },
+        {"text":"black bass",
+          "correct":false
+        },
+        {"text":"football fish",
+          "correct": false
+        }
+      ]
+    },
+    {
+        "question": "What is Tom Nook's children named?",
+        "possibleAnswers":
+        [
+          {"text":"Timmy and Tommy",
+          "correct":true },
+          {"text":"Isabelle and Apple",
+            "correct":false
+          },
+          {"text":"Blathers and Celeste",
+            "correct":false
+          },
+          {"text":"Knightro and Knugget",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "Which fruit is not a native fruit for an island?",
+        "possibleAnswers":
+        [
+          {"text":"Peaches",
+          "correct":false 
+          },
+          {"text":"Apples",
+            "correct":false
+          },
+          {"text":"Coconuts",
+            "correct":true
+          },
+          {"text":"Pears",
+            "correct": false
+          }
+        ]
+      }, 
+      {
+        "question": "Which is the newest Animal crossing game?",
+        "possibleAnswers":
+        [
+          {"text":"Wild World",
+          "correct":false 
+          },
+          {"text":"New horizon",
+            "correct":true
+          },
+          {"text":"New leaf",
+            "correct":false
+          },
+          {"text":"City Folk",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "What things do you NOT donate to your museum?",
+        "possibleAnswers":
+        [
+          {"text":"Fosils",
+          "correct":false },
+          {"text":"Bugs",
+            "correct":false
+          },
+          {"text":"Fish",
+            "correct":false
+          },
+          {"text":"Flowers",
+            "correct": true
+          }
+        ]
+      }
+  ]
