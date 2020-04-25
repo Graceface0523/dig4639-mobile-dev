@@ -1,0 +1,12 @@
+body {
+    background-color: pink;
+    text-align: center;
+}
+.profile{
+    background-color: white;
+    margin: 500px 200px 500px 200px;
+}
+h2{
+    background-color: grey;
+    margin: auto 200px auto 200px;
+}
